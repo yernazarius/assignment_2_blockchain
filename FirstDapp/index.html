@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8" />
+
+    <!-- Ensure proper rendering and compatibility with Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Configure viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Set the title of the HTML document -->
+    <title>LearnWeb3 First dApp</title>
+</head>
+
+<body>
+    <!-- Main container for the content of the web page -->
+    <div class="container">
+        <!-- Heading for the web page -->
+        <h1>My Awesome dApp</h1>
+
+        <!-- Introduction text for the web page -->
+        <p>Set or get your mood below:</p>
+
+        <!-- Label and input field for entering the mood -->
+        <label for="mood">Input Mood:</label> <br />
+        <input type="text" id="mood" />
+
+        <!-- Button to trigger the 'getMood' function -->
+        <button onclick="getMood()">Get Mood</button><br><br>
+
+        <!-- Button to trigger the 'setMood' function -->
+        <button onclick="setMood()">Set Mood</button>
+
+        <!-- Display area for showing the current mood -->
+        <p id="showMood"></p>
+    </div>
+
+    <!-- Include the ethers.js library from a CDN for Ethereum-related functionality -->
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js" type="application/javascript"></script>
+
+    <!-- Include the custom JavaScript file for additional functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>
